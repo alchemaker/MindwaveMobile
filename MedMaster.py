@@ -1,9 +1,9 @@
-##Meditation Master##
-#Built on the same principals as AttenGrabber
 import time
 import bluetooth
 from MindwaveDataPoints import RawDataPoint
-from MindwaveDataPoints import AttentionDataPoint
+#Added following to stock files from Neurosky
+from MindwaveDataPoints import MeditationDataPoint
+#
 from MindwaveDataPointReader import MindwaveDataPointReader
 
 
@@ -13,5 +13,5 @@ if __name__ == '__main__':
 
     while(True):
         dataPoint = mindwaveDataPointReader.readNextDataPoint()
-        if (dataPoint.__class__ is AttentionDataPoint):
+        if (dataPoint.__class__ is MeditationDataPoint):
             print dataPoint
