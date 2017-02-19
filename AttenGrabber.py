@@ -1,6 +1,6 @@
 
 ####################
-##AttentionGrabber##
+##Attention##
 #######################################################################
 ##This Limits OR "focuses" the output of MindwaveMobile parser to the##
 ##AttentionDataPoint(dataPoint)########################################
