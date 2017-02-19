@@ -12,7 +12,7 @@ from MindwaveDataPoints import RawDataPoint
 from MindwaveDataPointReader import MindwaveDataPointReader
 ##Added following to stock files from Neurosky DEV
 from MindwaveDataPoints import AttentionDataPoint
-##
+##Now we need to display the Attention Value each time it is next in the queue
 
 if __name__ == '__main__':
     mindwaveDataPointReader = MindwaveDataPointReader()
@@ -22,6 +22,4 @@ if __name__ == '__main__':
         dataPoint = mindwaveDataPointReader.readNextDataPoint()
         if (dataPoint.__class__ is AttentionDataPoint):
             print dataPoint
-#I opted to let the DevKit do most of the work for me
-## we will just take the individual datapoints as seen in
-## the real-time readout from Neurosky and focus on AttentionDataPoint(dataPoint)
+
