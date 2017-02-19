@@ -9,11 +9,10 @@
 import time
 import bluetooth
 from MindwaveDataPoints import RawDataPoint
-
+from MindwaveDataPointReader import MindwaveDataPointReader
 ##Added following to stock files from Neurosky DEV
 from MindwaveDataPoints import AttentionDataPoint
 ##
-from MindwaveDataPointReader import MindwaveDataPointReader
 
 if __name__ == '__main__':
     mindwaveDataPointReader = MindwaveDataPointReader()
